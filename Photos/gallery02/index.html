@@ -1,23 +1,21 @@
 ---
 layout: page
 title: "album"
-description: ""
+description: "masonry"
 active: gallery
 header-img: "img/gallery-bg.jpg"
-album-title: "Mountains-The Abode of Snow"
+album-title: "Flora"
 images:
  - image_path: /Photos/archive/g02/bg1.jpg
-   caption: 
-   copyright: © Nisargasya-Sauksmya
+   caption: IMAGE TITLE
+   mfp-title: IMAGE TITLE
+   copyright: © photorama
  - image_path: /Photos/archive/g02/bg2.jpg
-   caption: 
-   copyright: © Nisargasya-Sauksmya
+   caption: IMAGE TITLE
+   copyright: © photorama
  - image_path: /Photos/archive/g02/bg3.jpg
-   caption: 
-   copyright: © Nisargasya-Sauksmya
- - image_path: /Photos/archive/g02/bg4.jpg
-   caption: 
-   copyright: © Nisargasya-Sauksmya
+   caption: IMAGE TITLE
+   copyright: © photorama
 ---
 
 <html class="no-js" lang="en">
@@ -41,12 +39,12 @@ images:
 				<figure class="gallery-item">
 					<header class='gallery-icon'>
 
-<a href="{{ site.url }}{{ site.baseurl }}{{ image.image_path }}" class="popup"  title="{{ image.caption }}" data-caption="{{ image.copyright }}">
+<a href="{{ site.url }}{{ site.baseurl }}{{ image.image_path }}" class="popup" title="{{ image.caption }}" data-caption="{{ image.copyright }}">
 <img src="{{ site.url }}{{ site.baseurl }}{{ image.image_path }}"></a>
 						
 					</header>	
 					<figcaption class='gallery-caption'>
-						<div class="entry-summary" id="{{ image.caption }}">
+						<div class="entry-summary">
 							<h3>{{image.caption}}</h3>
 							<p>{{image.copyright}}</p>
 						</div>
@@ -62,29 +60,9 @@ images:
 
 <!-- jQuery -->    
 
-<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <!-- include image popups -->
 <script src="{{ site.baseurl }}/js/jquery.magnific-popup.js"></script>
-
-<script type="text/javascript">
-      $(document).ready(function($) {
-        $('a.popup').magnificPopup({
-         type: 'image',
-	  gallery:{
-         enabled:true,
-         navigateByImgClick: true,
-         preload: [0,1] // Will preload 0 - before current, and 1 after the current image
-       },
-image: {
-      titleSrc: function(item) {
-              return item.el.attr('title') + '&nbsp;' + item.el.attr('data-caption');
-            }
-        }
-          // other options
-      });
-});
-    </script>
-
 <script src="{{ site.baseurl }}/js/retina.min.js"></script>
 <!-- include Masonry -->
 <script src="{{ site.baseurl }}/js/isotope.pkgd.min.js"></script> 
@@ -99,5 +77,23 @@ image: {
 <!-- Modernizr -->
  <script src="{{ site.baseurl }}/js/modernizr.js"></script>
 
-    
+    <script type="text/javascript">
+      $(document).ready(function($) {
+        $('a.popup').magnificPopup({
+          type: 'image',
+	  gallery:{
+         enabled:true,
+         navigateByImgClick: true,
+         preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+       },
+      image: {
+         titleSrc: function(item) {
+             return item.el.attr('title') + '&nbsp;' + item.el.attr('data-caption');
+            }
+        }
+          // other options
+      });
+});
+    </script>
+
 </body></html>
