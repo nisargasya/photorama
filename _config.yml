@@ -1,5 +1,5 @@
 # Site settings
-title: PHOTORAMA
+title: Nisargasya Sauksmya
 email: ""
 description: "Photo Journal"
 url: "https://nisargasya.github.io"
@@ -15,7 +15,7 @@ share: true
 
 # Owner/author information
 owner:
-  name:   photorama
+  name:   Nisargasya-Sauksmya
   avatar: avatar.png
   favicon: favicon.ico
   info: photography website template
