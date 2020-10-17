@@ -33,9 +33,9 @@ comments :
 
 # Internal nav
 nav:
-  - GALLERY: "https://nisargasya.github.io/xyz/Photos/"  
+  - GALLERY: "https://nisargasya.github.io/sauksmya/Photos/"  
   
-  - ABOUT: "https://nisargasya.github.io/xyz/about/"
+  - ABOUT: "https://nisargasya.github.io/sauksmya/about/"
 
 # All translation keys
 translations:
